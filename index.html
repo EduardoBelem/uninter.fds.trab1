@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho FDS Fase 1</title>
+<style>
+ body {
+    background-color: blanchedalmond;
+    }
+ .titulo {
+    color: red; text-align: center;
+    }
+ .paragrafo1 { 
+    font-size: 20px;
+    text-align: justify;
+    }
+.lista1 {
+    color: red;
+    }    
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    }
+.figura1 {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    }
+ a {
+      color: blue;             
+      text-decoration: none;    /* Remove o sublinhado */
+      font-weight: bold;        
+    }
+.titulotabela {
+        text-align: center;
+    }
+table {
+        background-color: rgb(238, 238, 116);
+      width: 25%;
+      margin: 20px auto; /* Centraliza a tabela na página */
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+td {
+    text-align: center;
+    color: red;
+    }
+tr:hover {
+    background-color: black;
+    }
+a:hover {
+      color: red;               /* Cor quando passa o mouse */
+      text-decoration: underline; /* Sublinhado ao passar o mouse */
+    }
+#mensagem {
+    margin-top: 15px;
+    font-size: 18px;
+    color: darkred;
+    }
+</style>
+</head>
+<body>
+    <h1 class="titulo">EDUARDO BELÉM</h1>
+    <P class="paragrafo1">Me chamo Eduardo Carneiro Belém, tenho 40 anos de idade, 
+       resido em Vila Velha-ES porém sou Natural do Rio de Janeiro-RJ, 
+       sou militar e possuo interesse em me especializar na área de Análise
+       de Sistemas como projeto de uma aposentadoria ativa, mesmo que em outro país.
+       Adoro praticar esportes e sou louco pelo <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: red;">Flamengo!</span>!
+    </P> 
+    <br>
+     <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+      <p id="mensagem"></p>
+    <br>
+    Hobbies
+    <br>
+    <ul class="lista1">
+        <li>Jiu-Jitsu</li>
+        <li>Informática</li>
+        <li>Flamengo</li>
+    </ul>
+
+    <img class="figura1" src="Flamengo.jpg" alt="Escudo do Flamengo"><br>
+    <br>
+    <h3 class="titulotabela">Países que desejo visitar</h3>
+    <table border="1">
+    <tr>
+        <td>Japão</td>
+        <td><img src="https://melhoresmomentosdavida.com/wp-content/uploads/2023/07/pontos-turisticos-do-japao-capa.jpg" alt="Japão" width="200"></td>
+    </tr>
+    <tr>
+        <td>França</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="França" width="200"></td>
+    </tr>
+    <tr>
+        <td>Austrália</td>
+        <td><img src="https://malaecuia.com.br/blog/wp-content/uploads/2019/11/Untitled-design-37-1536x864.png" alt="Austrália" width="200"></td>
+    </tr>
+</table>
+<br>
+<br>
+<a href="https://www.flamengo.com.br/noticias/institucional/flamengo-apresenta-o-novo-nacao--um-programa-de-socio-torcedor-sem-fronteiras">Seja Sócio Torcedor do Flamengo</a>
+<br>
+<br>
+<script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerText = "Saudações Flamenguistas!";
+    }
+</script>
+</body>
+</html>
